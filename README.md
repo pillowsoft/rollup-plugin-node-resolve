@@ -49,7 +49,10 @@ rollup({
 
       // whether to prefer built-in modules (e.g. `fs`, `path`) or
       // local ones with the same names
-      preferBuiltins: false  // Default: true
+      preferBuiltins: false,  // Default: true
+      
+      // other paths to search for modules if not found in node_modules
+      paths: [ '/another/place/for/modules', '/and-yet-another' ],  // Default: []
       
     })
   ]
