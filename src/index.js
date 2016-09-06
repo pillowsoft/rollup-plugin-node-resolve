@@ -61,7 +61,8 @@ export default function nodeResolve ( options ) {
 							}
 							return pkg;
 						},
-						extensions: options.extensions
+						extensions: options.extensions,
+						paths: options.paths || [],
 					},
 					( err, resolved ) => {
 						if ( err ) {
